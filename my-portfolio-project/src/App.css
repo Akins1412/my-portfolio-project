@@ -6,7 +6,7 @@
 body {
   margin: 40px;
   padding: 5px;
-  background-image: url(/my-portfolio-project/src/assets/images/Desktop\ -\ 1\ \(1\).png);
+  background-image: url(../src/assets/images/Desktop\ -\ 1\ \(1\).png);
   background-color: black;
   background-repeat: no-repeat;
   color: whitesmoke;
@@ -87,7 +87,7 @@ li a {
   padding-top: 80px;
   justify-content: center;
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 
 .contact-info {
@@ -122,9 +122,8 @@ fieldset {
   justify-content: center;
   border: 1px solid;
   border-radius: 30px;
-
-  max-width: 38em;
-  padding: 10px;
+  max-width: 35em;
+  padding: 25px;
   margin: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;

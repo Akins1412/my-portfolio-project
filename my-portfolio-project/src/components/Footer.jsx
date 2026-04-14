@@ -27,7 +27,7 @@ function Footer() {
           </a>
         </div>
 
-        <p>© {year} Emmanuel Akins. All rights reserved.</p>
+        <p>©{year} Emmanuel Akins. All rights reserved.</p>
       </footer>
     </div>
   );

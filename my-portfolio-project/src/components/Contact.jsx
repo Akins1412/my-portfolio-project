@@ -1,4 +1,6 @@
 import React from "react";
+import Gmail from "../assets/images/gmail.png";
+import Whatsapp from "../assets/images/Whatsapp.png";
 
 function Contact() {
   return (
@@ -53,10 +55,17 @@ function Contact() {
             <br />
 
             <hr />
-            <ul>
-              {/* <!-- <li>emmanuelakins@gmail.com</li>
-            <li>(+233)552617018</li> --> */}
-            </ul>
+            <br />
+            <div className="reach-out">
+              <a href="" target="_blank">
+                <img src={Gmail} alt="gmail" />
+              </a>
+              <br />
+              <br />
+              <a href="" target="_blank">
+                <img src={Whatsapp} alt="whatsapp" />
+              </a>
+            </div>
           </div>
 
           <form action="">
@@ -80,7 +89,7 @@ function Contact() {
                 rows="6px"
                 cols="31px"
                 placeholder="Please leave a message..."
-                ov
+                maxLength={250}
               ></textarea>
             </div>
 
