@@ -7,7 +7,7 @@ function Hero() {
         <div className="hero">
           <div className="me">
             <h3>
-              Hola!, I'm Akins <br />A Frontend Dev/ Web Designer
+              Hola!, I'm <span>Akins</span> <br />A Frontend Dev/ Web Designer
             </h3>
           </div>
 
@@ -21,10 +21,10 @@ function Hero() {
 
           <div className="hero-btn">
             <a href="" className="btn-primary">
-              Get Started
+              View Projects
             </a>
             <a href="" className="btn-secondary">
-              View Projects
+              Contact me
             </a>
           </div>
         </div>

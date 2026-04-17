@@ -12,11 +12,11 @@ function Contact() {
           </div>
 
           <form action="">
-            <div class="field">
+            <div className="field">
               <input
                 type="text"
                 placeholder="John Doe"
-                maxlength="30"
+                maxLength={30}
                 required
               />
               <br />
@@ -29,10 +29,9 @@ function Contact() {
 
             <div className="">
               <textarea
-                rows="6px"
-                cols="31px"
+                rows={6}
+                cols={31}
                 placeholder="Please leave a message..."
-                ov
               ></textarea>
             </div>
 

@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa6";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const isActive = (link) => (activeLink === link ? "active" : "");
 
   return (
     <div>
@@ -15,21 +23,64 @@ function Navbar() {
           <nav className="nav-bar">
             <ul className={isOpen ? "nav-link active" : "nav-link"}>
               <li>
-                <a href="/home" className="active">
+                <a
+                  href="/home"
+                  className={isActive("home")}
+                  onClick={() => {
+                    setActiveLink("home");
+                    closeMenu();
+                  }}
+                >
                   HOME
                 </a>
               </li>
               <li>
-                <a href="/service">SERVICE</a>
+                <a
+                  href="/service"
+                  className={isActive("service")}
+                  onClick={() => {
+                    setActiveLink("service");
+                    closeMenu();
+                  }}
+                >
+                  SERVICE
+                </a>
               </li>
               <li>
-                <a href="/about">ABOUT</a>
+                <a
+                  href="/about"
+                  className={isActive("about")}
+                  onClick={() => {
+                    setActiveLink("about");
+                    closeMenu();
+                  }}
+                >
+                  ABOUT
+                </a>
               </li>
               <li>
-                <a href="/blog">BLOG</a>
+                <a
+                  href="/blog"
+                  className={isActive("blog")}
+                  onClick={() => {
+                    setActiveLink("blog");
+                    closeMenu();
+                  }}
+                >
+                  BLOG
+                </a>
               </li>
               <li>
-                <a href="/contact">CONTACT</a>
+                <a
+                  href="/contact"
+                  className={isActive("contact")}
+                  onClick={() => {
+                    setActiveLink("contact");
+                    closeMenu();
+                  }}
+                >
+                  CONTACT
+                </a>
               </li>
             </ul>
             <div className="icon" onClick={toggleMenu}>

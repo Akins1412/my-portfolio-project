@@ -1,7 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -16,8 +14,12 @@ function Footer() {
           >
             <FaGithub />
           </a>
-          <a href="https://x.com/yhomi99" target="_blank">
-            <FaXTwitter />
+          <a
+            href="https://x.com/yhomi99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter />
           </a>
           <a
             href="https://www.linkedin.com/in/emmanuel-akins-0b7a92284/?skipRedirect=true"
